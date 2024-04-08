@@ -1,11 +1,12 @@
-NGINX setup:
+# ENSF400-A3
+
+Start Minikube:
 
 ```bash
-kubectl apply -f nginx-dep.yaml
-kubectl apply -f nginx-configmap.yaml
-kubectl apply -f nginx-svc.yaml
-kubectl apply -f nginx-ingress.yaml
+minikube start
 ```
+
+NGINX setup:kubectl apply -f nginx-dep.yaml
 
 Apply Apps 1 and 2:
 
@@ -76,9 +77,9 @@ curl http://nginx-svc
 
 Output:
 
-![1712602223590](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/night/Desktop/code/ENSF400/assignment3/ensf400-lab8-kubernetes-2/image/Assignment3README/1712602223590.png)
+![1712602827962](image/Assignment3README/1712602827962.png)
 
-Delete all resources and cleanup
+# Delete all resources and cleanup
 
 ```bash
 kubectl delete deployments --all
