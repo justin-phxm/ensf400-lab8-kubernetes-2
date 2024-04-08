@@ -1,12 +1,22 @@
 # ENSF400-A3
 
+Justin Pham
+UCID: 30139323
+
 Start Minikube:
 
 ```bash
 minikube start
 ```
 
-NGINX setup:kubectl apply -f nginx-dep.yaml
+NGINX setup:
+
+```bash
+kubectl apply -f nginx-dep.yaml
+kubectl apply -f nginx-configmap.yaml
+kubectl apply -f nginx-svc.yaml
+kubectl apply -f nginx-ingress.yaml
+```
 
 Apply Apps 1 and 2:
 
